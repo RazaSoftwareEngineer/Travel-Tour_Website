@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Travel & Tour Company </title>
+    <link href="http://fonts.googleapis.com/css?family=Bloo+Bhai|Bree+Serif&display=swap"rel="stylesheet">
+    <style>
+      /*navigation bar*/
+     #navbar{
+      position: relative;
+      display: flex;
+      align-items: center;
+     }
+     #navbar::before{
+      content: "";
+      background-color: black;
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      opacity: 0.4;
+     }
+
+     /*navigation bar/ logo and image*/
+     #logo{
+      margin: 10px 20px;
+     }
+
+     #logo img{
+      height: 100px;
+      margin: 5px 12px;
+     }
+     /*navigation bar/ list styling*/
+
+     #navbar ul{
+      font-family: 'Baloo Bhai',cursive;
+      display: flex;
+     }
+
+    
+
+     #navbar ul li{
+      list-style: none;
+      font-size: 1.3rem;
+     }
+
+     #navbar ul li a{
+      color: rgb(250, 243, 243), 0, 0);
+      display: block;
+     padding:3px 15px ;
+     border-radius: 20px;
+     text-decoration: none;
+     }
+
+     #navbar ul li a:hover{
+      color: black;
+      background-color: white;
+    
+     }
+
+     /*home section*/
+     #home{
+      display: flex;
+      flex-direction:column ;
+      padding: 3px 150px;
+      height: 358px;
+      justify-content: center;
+      align-items: center;
+     }
+
+     #home::before{
+      content: "";
+      background:url('../cm.jpg')no-repeat center center/cover ;
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      height:550px;
+      width: 1295px;
+      z-index: -1;
+      opacity: 70;
+      
+     }
+    #home h1{
+      color: aliceblue;
+      text-align: center;
+    }
+    #home p{
+      font-family: 'Bree Serif',serif;
+      color: white;
+      text-align: center;
+      font-size: 1.6rem;
+    }
+     /*utilities classes*/
+     .h-primary{
+      font-size: 2.9rem;
+      padding: 9px;
+     }
+
+     .h-secondary{
+      font-size: 2.3rem;
+      padding: 9px;
+     }
+
+     .btn{
+      padding: 6px 16px;
+      border: 2px solid white;
+      background-color: rgb(233, 72, 72);
+      color: white;
+      margin: 17px;
+      font-size: 1.5rem;
+      border-radius: 10px;
+      cursor: pointer;
+     }
+     .center{text-align: center;}
+
+     /*sevices section*/
+     #services{
+      margin: 20px;
+      display: flex;
+
+     }
+     #services .box{
+     padding:26px ;
+     border-radius: 20px;
+     margin: 3px 6px;
+     background-color: rgb(235, 230, 230);
+      border: 2px solid rgb(151, 96, 96);
+     }
+
+     #services .box img{
+      height: 200px;
+      margin: auto;
+      display: block;
+     }
+     #services .box p{
+      font-family:'Bree Serif',serif ;
+     }
+
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="mar.png"></img>
+           </div>
+        <ul>
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#">Services</a></li>
+            <li class="item"><a href="#">About Us</a></li>
+            <li class="item"><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+      <h1 class="h-primary">Raza's Travel & Tour</h1> 
+      <p>Welcome to Raza's Travel & Tour.
+        Discover Extraordinary Journeys with us. We are passionate about creating unforgettable travel experiences tailored to meet your desires and exceed your expectations.</p>
+        <button class="btn">Book Now</button>
+
+    </section>
+
+    <section class="services-container">
+      <h1 class="h-primary center">Our Services</h1>
+      <div id="services">
+        <div class="box">
+            <img src="cus.jpg">
+           <h2 class="h-secondary center"> Customized Tours</h2>
+           <P class="center">Create your dream vacation with our personalized tour packages. Tell us your preferences, and we'll design an itinerary that suits your interests, budget, and timeline. From cultural explorations to thrilling adventures, we cater to every type of traveler.</P> 
+        </div>
+
+        <div class="box">
+            <img src="fm.jpeg">
+           <h2 class="h-secondary center"> Family-Friendly Packages</h2>
+           <P class="center">Create cherished memories with your loved ones through our family-friendly packages. We carefully curate itineraries that cater to all age groups, ensuring a delightful experience for the entire family.</P> 
+        </div>
+
+        <div class="box">
+            <img src="sh.jpeg">
+           <h2 class="h-secondary center">Luxury Escapes</h2>
+           <P class="center">Indulge in opulence with our luxury travel experiences. Immerse yourself in world-class accommodations, gourmet dining, and exclusive activities in the most enchanting destinations.</P> 
+        </div>
+      </div>
+    </section>
+</body>
+</html>
